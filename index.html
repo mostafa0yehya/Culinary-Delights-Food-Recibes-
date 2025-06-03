@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Index</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" id="logo" href="#"
+          ><span>Culinary</span> Delights</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse align-items-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" id="home" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="rec" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cat" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ing" href="#">Ingredients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="area" href="#">Areas</a>
+            </li>
+          </ul>
+          <form class="position-relative" role="search">
+            <div class="d-flex position-relative">
+              <span>
+                <i class="fa-solid fa-magnifying-glass "></i>
+              </span>
+              <input
+                class="form-control me-2 search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+            <div class="result-search"></div>
+
+            <!-- <button class="main-btn" type="submit">Search</button> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="main position-relative">
+      <div class="sections position-relative">
+        <div class="home section">
+          <div class="slider position-relative">
+            <div class="prev arrow text-white">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="next text-white arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="meals position-relative">
+              <div class="meal first current">
+                <div class="content">
+                  <h1 class="my-2">Delicious Recipes</h1>
+                  <p>Discover amazing recipes from around the world.</p>
+                  <a href="#" class="go-recipes"> Explore Recipes </a>
+                </div>
+              </div>
+
+              <div class="meal second">
+                <div class="content">
+                  <h1 class="my-2">Quick & Easy Meals</h1>
+                  <p>
+                    Delicious recipes ready in minutes — perfect for busy days
+                    and lazy nights.
+                  </p>
+                  <a class="go-recipes" href="#"> Explore Recipes </a>
+                </div>
+              </div>
+
+              <div class="meal third">
+                <div class="content">
+                  <h1 class="my-2">Healthy & Fresh</h1>
+                  <p>
+                    Wholesome meals made with fresh ingredients to keep you
+                    feeling great.
+                  </p>
+                  <a class="go-recipes" href="#"> Explore Recipes </a>
+                </div>
+              </div>
+            </div>
+            <div class="circles">
+              <button data-number="0" class="active"></button>
+              <button data-number="1"></button>
+              <button data-number="2"></button>
+            </div>
+          </div>
+
+          <div class="popular-meals my-5 py-5">
+            <div class="heading d-flex flex-column align-items-center">
+              <h1 class="mb-3">Popular Recipes</h1>
+              <p class="lead">
+                Discover the top-rated and most loved recipes, handpicked by our
+                food-loving community.
+              </p>
+            </div>
+
+            <div class="meals py-4">
+              <div class="container">
+                <div class="row gy-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories my-5">
+            <div class="heading d-flex flex-column align-items-center">
+              <h1 class="mb-3">Recipe Categories</h1>
+              <p class="lead">
+                Explore our diverse collection of recipes organized by meal type
+                and cuisine.
+              </p>
+            </div>
+
+            <div class="container position-relative">
+              <button class="prev arrow text-white">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="next arrow text-white">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <div class="categories-container py-3 my-4">
+                <div class="slider">
+                  <div class="row g-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="About" class="about my-lg-5 pt-lg-5 py-5">
+            <div class="container">
+              <div class="row justify-content-between gy-4">
+                <div class="col-xl-6">
+                  <img
+                    src="./images/chef.webp"
+                    class="w-100 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="col-xl-5">
+                  <div class="about-content d-flex align-items-center h-100">
+                    <div class="content">
+                      <h1>About Our Kitchen</h1>
+                      <p class="pb-3">
+                        Welcome to our culinary world! We're passionate about
+                        bringing you the most delicious, easy-to-follow recipes
+                        that will transform your kitchen into a gourmet
+                        destination.
+                      </p>
+                      <p class="pb-3">
+                        Our team of experienced chefs and food enthusiasts
+                        carefully curate each recipe to ensure you have the best
+                        cooking experience possible.
+                      </p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="box shadow text-center py-4">
+                            <h3 data-goal="500" data-sign="+">0</h3>
+                            <span>Recipes</span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="box py-4 shadow text-center">
+                            <h3 data-goal="50" data-sign="K+"></h3>
+                            <span> Happy Cooks</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section categories hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+        <div class="section ingredients hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+        <div class="section areas hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+        <div class="section meals-list hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+        <div class="section meal-section hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4"></div>
+          </div>
+        </div>
+
+        <div class="section recipes hide-section my-5 py-5">
+          <div class="container">
+            <div class="row h-100 g-4">
+              <div class="heading d-flex flex-column align-items-center">
+                <h1 class="mb-3">Featured Recipes</h1>
+                <p class="lead">
+                  Discover our handpicked selection of delicious recipes that
+                  will inspire your next culinary adventure.
+                </p>
+              </div>
+              <div class="filetr-meals">
+                <div
+                  class="filters d-flex w-100 justify-content-center flex-wrap mb-5"
+                ></div>
+                <div class="meals">
+                  <div class="row g-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load">
+        <span class="loader"></span>
+      </div>
+    </div>
+    <footer class="mt-5 pt-5">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-4 col-md-6">
+            <div class="title">
+              <h2 class="mb-3"><span>Culinary</span> Delights</h2>
+              <p class="w-75">
+                Your ultimate destination for delicious recipes and culinary
+                inspiration.
+              </p>
+              <div class="social">
+                <span><i class="fab fa-facebook-f fs-5 pe-3"></i></span>
+                <span><i class="fab fa-instagram fs-5 pe-3"></i></span>
+                <span><i class="fab fa-twitter fs-5 pe-3"></i></span>
+                <span><i class="fab fa-youtube fs-5 pe-3"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="links">
+              <h5 class="mb-3">Quick Links</h5>
+              <ul>
+                <li class="pb-1"><a href="#" class="foot-home">Home</a></li>
+                <li class="pb-1"><a href="#">Recipes</a></li>
+                <li class="pb-1">
+                  <a href="#" class="foot-cat">Categories </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="newsletter">
+              <h5 class="mb-3">Newsletter</h5>
+              <p>Subscribe to get weekly recipe updates.</p>
+              <form action="" class="d-flex rounded py-3">
+                <input
+                  type="text "
+                  class="py-2"
+                  name=""
+                  placeholder="Your Email"
+                />
+                <a class="">Subscribe</a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="pt-3 reserved text-center">
+          © 2025 Culinary Delights. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+  </body>
+</html>
